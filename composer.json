@@ -1,0 +1,38 @@
+{
+    "name": "ananiaslitz/facelesslog",
+    "description": "Inspirado no Noppera-bō, é uma biblioteca de logging que oculta ou anonimiza automaticamente informações sensíveis nos logs, protegendo a privacidade dos usuários.",
+    "type": "library",
+    "require-dev": {
+        "phpunit/php-timer": "^6.0",
+        "brain/monkey": "^2.6"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "FacelessLog\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Diego Ananias",
+            "email": "diegohsananias@gmail.com"
+        }
+    ],
+    "require": {
+
+        "symfony/http-client": "^6.3",
+        "nyholm/psr7": "^1.8",
+        "guzzlehttp/promises": "^2.0",
+        "php-http/httplug": "^2.4",
+        "hyperf/di": "^3.0",
+        "open-telemetry/api": "^1.0.0beta",
+        "monolog/monolog": "^3.4",
+        "open-telemetry/opentelemetry-logger-monolog": "^0.0.4"
+    },
+    "minimum-stability": "beta",
+    "config": {
+        "allow-plugins": {
+            "php-http/discovery": true
+        }
+    }
+}
