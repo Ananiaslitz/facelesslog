@@ -27,7 +27,8 @@
         "hyperf/di": "^3.0",
         "open-telemetry/api": "^1.0.0beta",
         "monolog/monolog": "^3.4",
-        "open-telemetry/opentelemetry-logger-monolog": "^0.0.4"
+        "open-telemetry/opentelemetry-logger-monolog": "^0.0.4",
+        "open-telemetry/opentelemetry": "^1.0@beta"
     },
     "minimum-stability": "beta",
     "config": {

@@ -3,9 +3,15 @@
 namespace FacelessLog;
 
 use FacelessLog\Anonymizers\AnonymizerInterface;
+use FacelessLog\Anonymizers\BirthDateAnonymizer;
+use FacelessLog\Anonymizers\CreditCardAnonymizer;
 use FacelessLog\Anonymizers\EmailAnonymizer;
+use FacelessLog\Anonymizers\PhoneAnonymizer;
+use FacelessLog\Detectors\BirthDateDetector;
+use FacelessLog\Detectors\CreditCardDetector;
 use FacelessLog\Detectors\DetectorInterface;
 use FacelessLog\Detectors\EmailDetector;
+use FacelessLog\Detectors\PhoneDetector;
 
 class FacelessLogger
 {
@@ -16,6 +22,15 @@ class FacelessLogger
     {
         $this->addDetector(new EmailDetector());
         $this->addAnonymizer(new EmailAnonymizer());
+
+        $this->addDetector(new PhoneDetector());
+        $this->addAnonymizer(new PhoneAnonymizer());
+
+        $this->addDetector(new CreditCardDetector());
+        $this->addAnonymizer(new CreditCardAnonymizer());
+
+        $this->addDetector(new BirthDateDetector());
+        $this->addAnonymizer(new BirthDateAnonymizer());
     }
 
     public function addDetector(DetectorInterface $detector)
