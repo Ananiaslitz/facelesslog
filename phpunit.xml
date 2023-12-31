@@ -1,16 +1,24 @@
 <?xml version="1.0"?>
-<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" colors="true" stopOnFailure="false" xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/10.5/phpunit.xsd" cacheDirectory=".phpunit.cache">
+<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         colors="true"
+         stopOnFailure="false"
+         xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/10.5/phpunit.xsd"
+         cacheDirectory=".phpunit.cache">
   <testsuites>
     <testsuite name="FacelessLog Test Suite">
       <directory>./tests</directory>
     </testsuite>
   </testsuites>
-  <logging>
-    <testdoxHtml outputFile="phpunit-report.html"/>
-  </logging>
-  <source>
+  <coverage cacheDirectory=".phpunit.cache/code-coverage">
     <include>
       <directory suffix=".php">./src</directory>
     </include>
-  </source>
+    <report>
+      <clover outputFile="coverage.xml"/>
+      <html outputFile="coverage-html"/>
+    </report>
+  </coverage>
+  <logging>
+    <testdoxHtml outputFile="phpunit-report.html"/>
+  </logging>
 </phpunit>
