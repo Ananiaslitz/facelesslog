@@ -1,0 +1,1 @@
+{"version":1,"defects":[],"times":{"Unit\\Anonymizers\\BirthDateAnonymizerTest::testAnonymizeWithDashedDateFormat":0.092,"Unit\\Anonymizers\\BirthDateAnonymizerTest::testAnonymizeWithSlashedDateFormat":0,"Unit\\Anonymizers\\BirthDateAnonymizerTest::testAnonymizeWithoutDate":0}}
