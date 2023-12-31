@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1704059291">
-  <project timestamp="1704059291">
+<coverage generated="1704059457">
+  <project timestamp="1704059457">
     <file name="/usr/local/src/src/Anonymizers/AnonymizerInterface.php">
       <metrics loc="9" ncloc="9" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
     </file>
@@ -56,15 +56,15 @@
     </file>
     <file name="/usr/local/src/src/Aspect/LogAnonymizerAspect.php">
       <class name="FacelessLog\Aspect\LogAnonymizerAspect" namespace="global">
-        <metrics complexity="2" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="0" elements="6" coveredelements="0"/>
+        <metrics complexity="2" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="4" elements="6" coveredelements="6"/>
       </class>
-      <line num="17" type="method" name="__construct" visibility="public" complexity="1" crap="2" count="0"/>
-      <line num="19" type="stmt" count="0"/>
-      <line num="29" type="method" name="process" visibility="public" complexity="1" crap="2" count="0"/>
-      <line num="31" type="stmt" count="0"/>
-      <line num="32" type="stmt" count="0"/>
-      <line num="33" type="stmt" count="0"/>
-      <metrics loc="36" ncloc="30" classes="1" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="0" elements="6" coveredelements="0"/>
+      <line num="17" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="19" type="stmt" count="1"/>
+      <line num="29" type="method" name="process" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="31" type="stmt" count="1"/>
+      <line num="32" type="stmt" count="1"/>
+      <line num="33" type="stmt" count="1"/>
+      <metrics loc="36" ncloc="30" classes="1" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="4" elements="6" coveredelements="6"/>
     </file>
     <file name="/usr/local/src/src/Detectors/BirthDateDetector.php">
       <class name="FacelessLog\Detectors\BirthDateDetector" namespace="global">
@@ -132,6 +132,6 @@
       <line num="64" type="stmt" count="2"/>
       <metrics loc="67" ncloc="67" classes="1" methods="6" coveredmethods="6" conditionals="0" coveredconditionals="0" statements="16" coveredstatements="16" elements="22" coveredelements="22"/>
     </file>
-    <metrics files="12" loc="242" ncloc="236" classes="10" methods="16" coveredmethods="14" conditionals="0" coveredconditionals="0" statements="49" coveredstatements="45" elements="65" coveredelements="59"/>
+    <metrics files="12" loc="242" ncloc="236" classes="10" methods="16" coveredmethods="16" conditionals="0" coveredconditionals="0" statements="49" coveredstatements="49" elements="65" coveredelements="65"/>
   </project>
 </coverage>
