@@ -9,7 +9,6 @@ use Hyperf\Di\Exception\Exception;
 
 class LogAnonymizerAspect extends AbstractAspect
 {
-
     /**
      * @var FacelessLogger
      */
