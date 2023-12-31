@@ -15,7 +15,7 @@ use FacelessLog\Detectors\PhoneDetector;
 
 class FacelessLogger
 {
-    private static FacelessLogger $instance;
+    private static ?FacelessLogger $instance = null;
     private $detectors = [];
     private $anonymizers = [];
 
@@ -27,10 +27,10 @@ class FacelessLogger
         $this->addDetector(new BirthDateDetector(), new BirthDateAnonymizer());
     }
 
-    public static function getInstance()
+    public static function getInstance(): FacelessLogger
     {
         if (self::$instance === null) {
-            self::$instance = new FacelessLogger();
+            self::$instance = new self();
         }
         return self::$instance;
     }
