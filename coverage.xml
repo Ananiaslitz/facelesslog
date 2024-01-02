@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1704059457">
-  <project timestamp="1704059457">
+<coverage generated="1704198592">
+  <project timestamp="1704198592">
     <file name="/usr/local/src/src/Anonymizers/AnonymizerInterface.php">
       <metrics loc="9" ncloc="9" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
     </file>
